@@ -1,0 +1,5 @@
+1. /images/image1.png                 if he host the website locally it would be http://localhost/images/image1.png
+2. ./js/app.js                        C:/Users/mazen/website/js/app.js  
+3. ../footage/video.mp4               C:/Users/mazen/footage/video.mp4  
+4. css/styles.css                     C:/Users/mazen/website/css/styles.css
+5. D:/memories/photo1.jpeg            D:/memories/photo1.jpeg

@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding-block: 10px;
+  background-color: #3b5998;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #8a9dc2;
+}
+
+.container {
+  padding-inline: 180px;
+  margin-inline: auto;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+@media (max-width: 720px) {
+  header .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+header .logo {
+  font-size: xx-large;
+}
+
+header form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .email {
+}
+header .password {
+}
+header .email,
+header .password {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+header button {
+  width: fit-content;
+  padding: 4px 5px;
+  background: #5972a7;
+  color: white;
+  cursor: pointer;
+}
+form label[for="checkbox1"] {
+  color: #8a9dc2;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to top, #d3d8e8, #ffffff);
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section .container {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+section .container div {
+  width: 65%;
+}
+section .container img {
+  position: absolute;
+  left: 180px;
+  top: 50px;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  section .container img {
+    display: none;
+  }
+}
+section .container div > h2 {
+  color: #153e64;
+  max-width: 500px;
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 768px) {
+  section .container {
+    flex-direction: column;
+  }
+  section .container div {
+    width: 100%;
+  }
+}
+section form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #c5cedc;
+}
+section form {
+  z-index: 10;
+  position: relative;
+}
+section form .name {
+  display: flex;
+  gap: 10px;
+}
+section .name input {
+  flex: 1;
+}
+
+.gender {
+  display: flex;
+  gap: 20px;
+}
+
+.gender div {
+}
+
+section form button {
+  width: fit-content;
+  background: #62a44f;
+  padding: 7px 65px;
+  border-radius: 6px;
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .container ul {
+  list-style-type: none;
+  display: flex;
+  /* gap: 10px; */
+  width: 65%;
+}
+
+@media (max-width: 786px) {
+  footer .container ul {
+    width: 100%;
+  }
+}
+
+footer .container ul li {
+  padding-block: 10px;
+  width: calc(100% / 9);
+}
+footer .container ul li a {
+  font-size: small;
+}
+footer .container ul li.more {
+  background-color: #eceff5;
+  width: fit-content;
+  padding: 5px 15px;
+  cursor: pointer;
+  align-self: center;
+}
